@@ -1,0 +1,13 @@
+{
+ "source": "auction.sctools.tech API (реальные цены) + EXBO item database",
+ "fetched_at": "2026-11-26T00:25:53+00:00",
+ "items": 1127,
+ "price_estimated": 57,
+ "price_min": 1,
+ "price_median": 100000,
+ "price_max": 550000000,
+ "prices_fetched_at": "2026-11-26T00:26:58+00:00",
+ "items_with_prices": 1016,
+ "prices_above_1m": 268,
+ "prices_above_100m": 7
+}

@@ -1,0 +1,44 @@
+.wrapper {
+  max-width: 720px;
+  padding-top: 24px;
+}
+
+.text {
+  color: var(--text-muted);
+  max-width: 60ch;
+  margin-bottom: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary,
+.secondary {
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  border: 1px solid var(--border-strong);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.primary {
+  background: var(--accent-soft);
+  border-color: rgba(61, 220, 151, 0.45);
+  color: var(--accent);
+}
+
+.primary:hover {
+  background: rgba(61, 220, 151, 0.2);
+}
+
+.secondary {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.secondary:hover {
+  border-color: var(--accent);
+}

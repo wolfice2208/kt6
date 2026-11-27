@@ -1,0 +1,81 @@
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 24px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  background: rgba(17, 26, 32, 0.5);
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--border-strong);
+  border-top-color: var(--accent);
+  animation: spin 0.8s linear infinite;
+  flex: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  padding: 20px 22px;
+  border: 1px solid rgba(244, 115, 111, 0.4);
+  border-left: 3px solid var(--danger);
+  border-radius: var(--radius);
+  background: var(--danger-soft);
+}
+
+.errorTitle {
+  font-weight: 600;
+  color: var(--danger);
+  margin-bottom: 6px;
+}
+
+.errorText {
+  color: var(--text);
+  margin: 0 0 14px;
+  font-size: 14px;
+}
+
+.retry {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 13px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.retry:hover {
+  border-color: var(--danger);
+  background: var(--surface-3);
+}
+
+.empty {
+  padding: 36px 24px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  text-align: center;
+  background: rgba(17, 26, 32, 0.45);
+}
+
+.emptyTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.emptyHint {
+  margin: 8px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
